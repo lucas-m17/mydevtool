@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/magiclea/gotunl"
+	"github.com/cghdev/gotunl/pkg/gotunl"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
 	"github.com/tidwall/gjson"
