@@ -1,6 +1,7 @@
 ## Installation
 ```sh
-$ go get -u github.com/magiclea/mydevtool
+$ go build -ldflags="-s -w" -o ./mydevtool
+$ cp ./mydevtool $GOPATH/bin
 ```
 
 ## Timestamp Command
@@ -74,7 +75,7 @@ Enter Profile ID or Name: 1
 sent request to connect new one
 ```
 if you would like to generate OTP automatically, try two-factor authentication agent, [the agent](`https://github.com/rsc/2fa`) is I'm used currently.
-- check out your https://pritunl.17.media/ site to apply to 2fa key 
+- check out your https://pritunl.17.media/ site to apply the 2fa key 
 ```sh
 $ go get -u rsc.io/2fa
 $ 2fa -add serv1
